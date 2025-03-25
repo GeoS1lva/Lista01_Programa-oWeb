@@ -1,0 +1,49 @@
+/* <!-- Geovana Paula da Silva RA_170610-2024 --> */
+
+body{
+    background-color:rgb(204, 204, 204);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(99, 1, 148);
+    height: 80px;
+}
+
+#linha-vertical{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 135px;
+    height: 100%;
+    background-color: rgb(99, 1, 148);
+}
+
+#mapa-site {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+li {
+    padding: 3px 0;
+    cursor: pointer;
+    text-indent: 5px;
+}
+
+ul ul {
+    display: none;
+    margin-left: 20px;
+}
+
+ul li:hover > ul {
+    display: block;
+}
