@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/IMAGENS/Eletrica.jpg"); /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  margin: 40px;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(59, 53, 53, 0.8);
+  padding: 20px;
+  border-radius: 100px;
+  max-width: 1500px;
+}

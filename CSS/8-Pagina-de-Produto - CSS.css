@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 125px;
+  background-color: #f0f0f0;
+  color: #333;
+  align-items: end;
+}
+
+.produto {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.produto img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.produto h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+@font-face {
+  font-family: "Fonte Aleatoria 1";
+  src: url(/FONTES/OpenSans-Regular.ttf) format("truetype");
+}
+
+.produto p {
+  font-family: "Fonte Aleatoria 1";
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+@font-face {
+  font-family: "Fonte Aleatoria2";
+  src: url(/FONTES/OpenSans-ExtraBold.ttf) format("truetype");
+}
+.produto .preco {
+  font-family: "Fonte Aleatoria2";
+  font-size: 19px;
+  color: #73c300;
+  margin: 25px 0;
+}
+
+.produto .botao-comprar {
+  color: #f0f0f0;
+  width: 25%;
+  height: 48px;
+  background: #00a000;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5);
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.produto .botao-comprar:hover {
+  background: #008000;
+}
