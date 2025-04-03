@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 10px 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #ffffff 39%, #87ceeb);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav ul li a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: #87ceeb;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(to right, #ffffff 39%, #87ceeb);
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-left: 100px;
+}
+
+.content p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-left: 100px;
+}
+
+.image img {
+  margin-bottom: 0.5px;
+  border-radius: 10px;
+  width: 500px;
+  margin-right: 220px;
+}
+
+.header-port {
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 30px;
+  color: #333;
+  background-color: #a7dbf0;
+  border-radius: 100px;
+  margin-left: 500px;
+  margin-right: 500px;
+  box-shadow: 0 0 20px #00b3ff;
+}
+
+.portfolio_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: 20px;
+  margin-left: 20px;
+  gap: 50px;
+  margin: 60px;
+  margin-top: 80px;
+}
+
+.portfolio-item {
+  background-color: #8bd0ec;
+  box-shadow: 0 0 20px #00b3ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 0.9s ease-in;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  align-items: center;
+  max-width: 80%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.portfolio-item h2 {
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 25px;
+  color: white;
+}
+
+.portfolio-item p {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.portfolio-button {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 9px 18px;
+  background-color: #0c6edd;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1px) {
+  .portfolio_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1px) {
+  .portfolio_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
