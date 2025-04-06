@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="/CSS/Exercicio_5.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form class="formulario">
+            
+            <h2>Mensagem</h2>
+            <div class="divs">
+                <label for="Usuario">Usuario:</label>
+                <input type="text" name="Usuario" placeholder="Nome Usuario">
+            </div>
+
+            <div id="email">
+                <label for="Email">Email Remetente:</label>
+                <input type="email" name="Email" placeholder="Email Remetente">
+
+                <label for="EmailD">Email Destinatário:</label>
+                <input type="email" name="EmailD" placeholder="Email Destinatário">
+            </div>
+
+            <div class="divs">
+                <label for="Assunto">Assunto:</label>
+                <input type="text" name="Assunto" placeholder="Assunto Mensagem">
+            </div>
+
+            <div class="divs">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="area_mensagem" placeholder="Escreva a mensagem..."></textarea>
+            </div>
+
+            <input id="enviar" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
