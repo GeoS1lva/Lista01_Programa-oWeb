@@ -16,6 +16,7 @@ h2{
     border-radius: 10px;
     margin-top: 200px;
     margin-left: 757px;
+    box-shadow: 3px 3px blue;
 }
 
 label,
