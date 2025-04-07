@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(/FONTES/Roboto-Black.ttf) format("truetype");
+}
+
+body {
+  font-family: "Roboto";
+  color: #333;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  border-bottom: 2px solid #0056b3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.motherboard-faq {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.motherboard-faq h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #007bff;
+  margin-bottom: 40px;
+}
+
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+details summary {
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007bff;
+  padding: 7px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  position: relative;
+  padding-left: 30px;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease 0.2;
+}
+
+details summary:hover {
+  background-color: #e0e0e0;
+  color: #0056b3;
+}
+
+details summary::before {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.answer {
+  padding-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
