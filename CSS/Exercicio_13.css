@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Inter-regular";
+  src: url(/FONTES/Inter-Regular.otf) format("opentype");
+  font-style: normal;
+}
+
+:root {
+  --primary: #2c6e49;
+  --secondary: #4c956c;
+  --accent: #fec89a;
+  --background: #f7ede2;
+  --text: #1a3c34;
+}
+
+body {
+  font-family: "Inter-regular";
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--text);
+}
+.title h1 {
+  font-weight: bold;
+  font-family: "Inter-regular";
+  font-size: 80px;
+  color: var(--primary);
+  text-align: center;
+  margin: 100px 0 18px;
+}
+
+.title p {
+  font-family: "Inter-regular";
+  font-size: 18px;
+  font-weight: 1000;
+  color: var(--text);
+  text-align: center;
+  margin: 0 0 80px;
+}
+
+.input {
+  font-family: "Inter-regular";
+  text-align: center;
+  font-size: 20px;
+  font-weight: 1000;
+  color: var(--text);
+  margin: 20px auto 4px;
+  border-radius: 5px;
+  border: 2px solid var(--secondary);
+  width: 80%;
+  max-width: 700px;
+  height: 50px;
+}
+
+.button {
+  font-family: "Inter-regular";
+  text-align: center;
+  font-size: 20px;
+  font-weight: 1000;
+  color: var(--background);
+  background-color: var(--primary);
+  margin: 10px auto 100px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 700px;
+  height: 50px;
+  display: block;
+  transition: bacground-color 0.3s, color 0.3s;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.result-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-right: 50px;
+  margin-left: 50px;
+  gap: 30px;
+  margin: 80px auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+.result-product-item {
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.4s;
+}
+
+.result-product-item img {
+  align-items: center;
+  max-width: 50%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.result-product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#product-price {
+  color: #d32f2f;
+  margin-bottom: 20px;
+}
+
+.result-product-item p {
+  color: var(--secondary);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .input,
+  .button {
+    width: 90%;
+  }
+  .title h1 {
+    font-size: 50px;
+  }
+}
