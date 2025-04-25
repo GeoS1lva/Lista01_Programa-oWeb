@@ -1,0 +1,116 @@
+/*Autora: Sabrina Peres Botelho RA: 70237-2021  ADS 3º Semestre*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    display: flex; /* Adicionando flexbox para o body */
+    flex-direction: column; /* Mudando a direção para coluna */
+    min-height: 100vh; /*Faz o conteúdo ocupar no mínimo toda a altura da viewport*/
+}
+
+header{
+    background-color: #3F5644;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 5%;
+    height: auto;
+}
+
+header ul{
+    list-style: none;
+    font-weight: 400;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar todo o espaço disponível */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.depoimentos{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.testemunhos {
+    display: grid;
+    gap: 30px;
+    font-size: 16px;
+    max-width: 900px;
+    place-items: center;
+}
+
+.testemunho {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cliente-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cliente-foto {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.cliente-nome {
+    font-weight: bold;
+    color: #444;
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 20px;
+    border-left: 3px solid #ddd;
+}
+
+blockquote p {
+    font-style: italic; /* Aplicando font-style como solicitado */
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #3F5644;
+    padding: 15px;
+    text-align: center;
+    color: white;
+      
+}
+
+@media (max-width: 600px) {
+    .testemunhos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) {
+    .testemunhos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
